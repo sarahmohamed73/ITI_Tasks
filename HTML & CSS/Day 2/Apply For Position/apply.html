@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply For Position</title>
+    <link rel="stylesheet" href="apply.css">
+  </head>
+  <body>
+    <h1>Apply For Position</h1>
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Your Info</legend>
+        <div class="firstname">
+          <label for="firstname">Firstname</label>
+          <input type="text" name="firstname" id="firstname" placeholder="Enter Your First Name" required>
+        </div>
+        <div class="secondname">
+          <label for="secondname">Secondname</label>
+          <input type="text" name="secondname" id="secondname" placeholder="Enter Your Second Name" required>
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="age">
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" placeholder="Enter Your Age">
+        </div>
+        <div class="describe">
+          <label for="describe">Which Option Best Describes You ?</label>
+          <select name="describe" id="describe">
+            <option value="Student">Student</option>
+            <option value="Instructor">Instructor</option>
+            <option value="Gradute">Gradute</option>
+            <option value="Developer">Developer</option>
+            <option value="Doctor">Doctor</option>
+          </select>
+        </div>
+        <div class="gender">
+          <label>What is Your Gender</label>
+          <div class="male">
+            <input type="radio" name="gender" id="Male">
+            <label for="male">Male</label>
+          </div>
+          <div class="female">
+            <input type="radio" name="gender" id="Female">
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <div class="language">
+          <label>Languages and Framewirks known (check all that apply)</label>
+          <div class="c#">
+            <input type="checkbox" name="lang" id="c#">
+            <label for="c#">C#</label>
+          </div>
+          <div class="java">
+            <input type="checkbox" name="lang" id="java">
+            <label for="java">Java</label>
+          </div>
+          <div class="python">
+            <input type="checkbox" name="lang" id="python">
+            <label for="python">Python</label>
+          </div>
+          <div class="javascript">
+            <input type="checkbox" name="lang" id="javascript">
+            <label for="javascript">JavaScript</label>
+          </div>
+          <div class="react">
+            <input type="checkbox" name="lang" id="react">
+            <label for="react">React</label>
+          </div>
+          <div class="angular">
+            <input type="checkbox" name="lang" id="angular">
+            <label for="angular">Angular</label>
+          </div>
+        </div>
+        <div class="question">
+          <label for="question">Why Should We Hire You?</label>
+          <textarea name="hiring" id="question" cols="30" rows="3"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
