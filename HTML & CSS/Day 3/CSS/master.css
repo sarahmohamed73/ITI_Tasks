@@ -1,0 +1,320 @@
+/* Start Variable */
+:root {
+  --main-color: #dc8761;
+  --paragraph-color: #777;
+  --section-padding: 100px;
+  --main-transition: 0.5s;
+}
+/* End Variable */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  -o-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small Screen */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Lagre Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* Start Components */
+.main-heading {
+  text-align: center;
+}
+
+.main-heading h2 {
+  font-size: 25px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: var(--main-color);
+}
+
+/* End Components */
+/* Start Header */
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 10;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 49px;
+}
+.header .logo i {
+  color: var(--main-color);
+  font-size: 20px;
+}
+.header .logo a {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.header .main-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .main-nav .toggle-menu {
+  color: var(--main-color);
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  .header .main-nav .toggle-menu {
+    display: none;
+  }
+}
+.header .main-nav ul {
+  display: flex;
+}
+.header .main-nav ul li a {
+  display: flex;
+  padding: 15px;
+  color: var(--paragraph-color);
+  transition: var(--main-transition);
+}
+.header .main-nav ul li a i {
+  margin-right: 5px;
+}
+.header .main-nav ul li a.active,
+.header .main-nav ul li a:hover {
+  background-color: #e7e7e7;
+  border-bottom: 1px solid var(--main-color);
+}
+@media (max-width: 767px) {
+  .header .main-nav ul {
+    display: none;
+  }
+  .header .main-nav .toggle-menu:hover + ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+  }
+}
+/* End Header */
+/* Start Landing */
+.landing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url(../Images/light_bulb.jpg);
+  background-size: cover;
+}
+.landing .text h1 {
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+}
+.landing .text h1 i {
+  margin-right: 5px;
+}
+.landing .text p {
+  font-size: 17px;
+  padding: 20px 0;
+  color: white;
+}
+.landing button {
+  padding: 10px 20px;
+  background-color: #eb895a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .landing .text {
+    width: 100%;
+  }
+  .landing .text h1 {
+    font-size: 37px;
+  }
+  .landing .text h1 i {
+    display: none;
+  }
+  .landing .text p {
+    font-size: 16px;
+  }
+}
+/* End Landing */
+/* Start Products */
+.products {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.products .products-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 30px;
+}
+.products .products-content .card {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  padding: 15px;
+}
+.products .products-content .card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.products .products-content .card .info {
+  padding-top: 20px;
+}
+.products .products-content .card .info h3 {
+  margin: 10px 0;
+  color: var(--main-color);
+}
+.products .products-content .card .info p {
+  color: var(--paragraph-color);
+  line-height: 1.5;
+}
+.products .products-content .card .info span {
+  display: inline-block;
+  margin: 10px 0;
+  color: var(--main-color);
+}
+.products .products-content .card .info del {
+  color: #ccc;
+  margin-right: 10px;
+}
+.products .products-content .card form {
+  width: 100%;
+  display: flex;
+}
+.products .products-content .card form input {
+  width: calc(100% - 110px);
+  padding: 8px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #ccc;
+  border-right: none;
+  caret-color: var(--main-color);
+  outline: none;
+}
+.products .products-content .card form button {
+  width: 110px;
+  padding: 6px;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: var(--main-color);
+  color: white;
+}
+/* End Products */
+/* Start Services */
+.services {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: #f6f6f6;
+}
+.services .services-content p {
+  color: var(--paragraph-color);
+  line-height: 1.7;
+  padding: 40px;
+}
+.services .services-content img {
+  border-radius: 70%;
+  max-width: 100%;
+}
+/* End Services */
+/* Start Footer */
+.footer {
+  padding-top: calc(var(--section-padding) / 2);
+  padding-bottom: calc(var(--section-padding) / 2);
+  /* background-color: #f6f6f6; */
+}
+.footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.footer .footer-content .col h3 {
+  font-weight: normal;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.footer .footer-content .col ul li a {
+  display: block;
+  margin: 5px 0;
+  color: var(--paragraph-color);
+  font-size: 14px;
+}
+.footer .footer-content .col h3 i {
+  margin-right: 5px;
+}
+.footer .footer-content .col form {
+  width: 100%;
+  display: flex;
+}
+.footer .footer-content .col form input {
+  width: calc(100% - 100px);
+  padding: 8px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #ccc;
+  border-right: none;
+  caret-color: var(--main-color);
+  outline: none;
+}
+.footer .footer-content .col form button {
+  width: 100px;
+  padding: 6px;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: var(--main-color);
+  color: white;
+}
+/* End Footer */
