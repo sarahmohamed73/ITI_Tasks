@@ -25,6 +25,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  padding-top: 49px;
 }
 
 ul {
@@ -79,7 +80,7 @@ a {
 /* End Components */
 /* Start Header */
 .header {
-  position: sticky;
+  position: fixed;
   left: 0;
   top: 0;
   background-color: white;
