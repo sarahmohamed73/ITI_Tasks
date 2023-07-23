@@ -1,15 +1,16 @@
 // Q(1)
 const pascalCase = sentence => {
-  let result = sentence[0].toUpperCase();
-  for(let i = 1; i < sentence.length; i++) {
-    if(sentence[i] == " ") {
-    result += sentence[i];
-    result += sentence[++i].toUpperCase();
-    } else {
-    result += sentence[i];
+  let lowerCase = sentence.toLowerCase();
+  let words = lowerCase.split(" ");
+  let result = [];
+  for(let i = 0; i < words.length ; i++) {
+    let letters = words[i].split("");
+    if(letters[0] !== undefined) {
+      letters[0] = letters[0].toUpperCase();
     }
+    result.push(letters.join(""));
   }
-  return result;
+  return result.join(" ");
 }
 
 // Q(2)
@@ -25,38 +26,38 @@ const findLongestWord = sentence => {
 }
 
 // Q(3)
-const alphabeticalOrder1 = sentence => {
-  let lowerSentence = sentence.toLowerCase();
-  let alphaOrder = lowerSentence.split("").sort().join("");
-  let upperLetter = [];
-  let spaces = []
-  let result = "";
-  for(let i = 0; i < sentence.length ; i++) {
-    if (sentence[i] == " ") {
-      spaces.push(i);
-    } else if (sentence[i] == sentence[i].toUpperCase()) {
-      upperLetter.push(sentence[i].toLowerCase());
-    }
-  }
-  for(let i = 0; i < alphaOrder.length ; i++) {
-    if(alphaOrder[i] == " ") {
-      continue;
-    } else if (upperLetter.indexOf(alphaOrder[i]) != -1) {
-      result += alphaOrder[i].toUpperCase();
-      upperLetter.splice(upperLetter.indexOf(alphaOrder[i]),1);
-    } else {
-      result += alphaOrder[i]
-    }
-  }
-  let resultArr = result.split("");
-  for(let i = 0; i < spaces.length; i++) {
-    resultArr.splice(spaces[i],0," ");
-  }
-  result = resultArr.join("");
-  return result;
-}
+// const alphabeticalOrder1 = sentence => {
+//   let lowerSentence = sentence.toLowerCase();
+//   let alphaOrder = lowerSentence.split("").sort().join("");
+//   let upperLetter = [];
+//   let spaces = []
+//   let result = "";
+//   for(let i = 0; i < sentence.length ; i++) {
+//     if (sentence[i] == " ") {
+//       spaces.push(i);
+//     } else if (sentence[i] == sentence[i].toUpperCase()) {
+//       upperLetter.push(sentence[i].toLowerCase());
+//     }
+//   }
+//   for(let i = 0; i < alphaOrder.length ; i++) {
+//     if(alphaOrder[i] == " ") {
+//       continue;
+//     } else if (upperLetter.indexOf(alphaOrder[i]) != -1) {
+//       result += alphaOrder[i].toUpperCase();
+//       upperLetter.splice(upperLetter.indexOf(alphaOrder[i]),1);
+//     } else {
+//       result += alphaOrder[i]
+//     }
+//   }
+//   let resultArr = result.split("");
+//   for(let i = 0; i < spaces.length; i++) {
+//     resultArr.splice(spaces[i],0," ");
+//   }
+//   result = resultArr.join("");
+//   return result;
+// }
 
-const alphabeticalOrder2 = sentence => {
+const alphabeticalOrder = sentence => {
   let spaces = [];
   let str = "";
   for(let i = 0; i < sentence.length ; i++) {

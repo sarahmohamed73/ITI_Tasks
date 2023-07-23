@@ -1,6 +1,6 @@
 // Q(1)
-let firstName = new String("THe QUICK Brown FOX");
-let capitalize = pascalCase(firstName.toLowerCase());
+let firstName = new String("THe    QUICK Brown FOX");
+let capitalize = pascalCase(firstName);
 console.log(capitalize);
 
 // Q(2)
@@ -9,11 +9,9 @@ let longestWord = findLongestWord(sentence);
 console.log(longestWord);
 
 // Q(3)
-let string = new String("JjavaScript");
-let alphaOrder1 = alphabeticalOrder1(string);
-let alphaOrder2 = alphabeticalOrder2(string);
-console.log(alphaOrder1);
-console.log(alphaOrder2);
+let string = new String("javascript");
+let alphaOrder = alphabeticalOrder(string);
+console.log(alphaOrder);
 
 // Q(4)
 let month = getMonthName();
