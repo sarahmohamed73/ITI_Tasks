@@ -24,6 +24,7 @@ perviousButton.onclick = function(){
   console.log(imageIndex);
 }
 // Slide Show
+// const getTimerId = (timerId) => timerId;
 let slideShowButton = document.querySelector("button.slideShow");
 let stopButton = document.querySelector("button.stop");
 slideShowButton.onclick = function(){

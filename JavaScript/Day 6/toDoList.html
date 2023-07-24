@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h1 {
+                color: brown;
+                text-align: center;
+                font-size: 40px;
+            }
+            .form {
+                display: flex;
+                justify-content: center;
+            }
+            input[type = "text"] {
+                width: 500px;
+                height: 40px;
+                border: 1px solid #eee;
+                box-shadow: -1px 1px 12px 0px #ccc;
+                border-radius: 5px;
+            }
+            button {
+                width: fit-content;
+                padding: 10px;
+                height: 40px;
+                border-radius: 5px;
+                border: none;
+                margin-left: 10px;
+                background-color: brown;
+                color: white;
+            }
+            table {
+                width: 900px;
+                margin: 20px auto;
+                border-collapse: collapse;
+                color: brown;
+                padding: 0;
+            }
+            table tr {
+                width: 50px;
+                height: 30px;
+            }
+            table thead th {
+                background-color: #f34e30;
+                border: 1px solid tomato;
+                color: white;
+                height: 40px;
+                font-size: 20px;
+            }
+
+            table tbody td {
+                border: 1px solid brown;
+                color: brown; 
+                text-align: center;
+            }
+            table tbody tr:nth-child(even) {
+                background-color: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>To Do Organizer</h1>
+        <div class="form">
+            <input type="text" id="task" >
+            <button class="add">Add</button>
+        </div>
+        <table class="toDoLists">
+            <thead>
+                <tr>
+                    <th class="done">Done</th>
+                    <th class="task">Task</th>
+                    <th class="delete">Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <script src="JS/toDoList.js"></script>
+    </body>
+</html>
