@@ -65,7 +65,7 @@ class Car extends Engine {
     this.styles = styles;
     for(let property in styles) {
       console.log(property, styles[property]);
-      this.image.style.cssText += `${property}: ${styles[property]}`;
+      this.image.style[property] = styles[property];
     }
   }
 
@@ -115,7 +115,7 @@ class Bus extends Engine {
 }
 
 let carObject = new Car(10,10,"Images/200.jpg");
-// let carObject2 = new Car(400,10,"Images/205.jpg");
+let carObject2 = new Car(400,10,"Images/205.jpg");
 // let busObject = new Bus();
 let counterCar = carObject.getCounter();
 // let counterBus = busObject.getCounter();
