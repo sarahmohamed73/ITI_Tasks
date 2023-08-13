@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/master.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+  <body>
+    <h1>Country Map</h1>
+    <div>
+      <label for="country">Select a country:</label>
+      <select class="country">
+        <option value="">Select a country</option>
+        <option value="Egypt" data-lat="26.820553" data-lng="30.802498">Egypt</option>
+        <option value="Canada" data-lat="56.130366" data-lng="-106.346771">Canada</option>
+        <option value="US" data-lat="37.09024" data-lng="-95.712891">United States</option>
+        <option value="France" data-lat="46.227638" data-lng="2.213749">France</option>
+      </select>
+    </div>
+    <div id="map"></div>
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises.
+      See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&v=weekly"
+        defer></script>
+  <script src="JS/main.js"></script>
+  </body>
+</html>

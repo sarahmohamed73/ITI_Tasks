@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/master.css">
+  </head>
+  <body>
+    <div class="aduioBox">
+      <div class="image">
+        <img src="Images//Super Mario Bros (NES) Music - Overworld Theme.jpg" alt="">
+      </div>
+      <div class="audio">
+        <label for="volume">Volume: </label>
+        <input type="range" id="volume" step="0.1" min="0" max="1" value="1">
+        <br><br>
+        <label for="time">Time: </label>
+        <input type="range" id="time" min="0" value="0">
+        <br><br>
+        <button class="play">Play</button>
+        <button class="pause">Pause</button>
+        <button class="stop">Stop</button>
+        <audio src = "Audios/Super Mario Bros (NES) Music - Overworld Theme.mp3"></audio>
+      </div>
+    </div>
+    <div class="playlist">
+      <ul>
+        <li>Super Mario Bros (NES) Music - Overworld Theme</li>
+        <li>Drew Banga - Groove</li>
+        <li>MK2 - Funk Down</li>
+        <li>Francis Preve - Dishofunque</li>
+      </ul>
+    </div>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

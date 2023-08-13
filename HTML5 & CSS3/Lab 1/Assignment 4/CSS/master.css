@@ -1,0 +1,47 @@
+.aduioBox {
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #607D8B;
+  padding: 20px 0;
+}
+.image {
+  height: 100%;
+}
+.image img {
+  height: 100%;
+}
+label {
+  color: aliceblue;
+}
+button {
+  width: 60px;
+  height: 25px;
+  border: none;
+  border-radius: 2px;
+}
+.playlist {
+  width: 500px;
+  margin: 100px auto;
+  background: #607D8B;
+  padding: 20px;
+}
+.playlist ul {
+  list-style: none;
+  width: calc(100% - 40px);
+  padding: 0;
+  margin: 0;
+}
+.playlist ul li {
+  width: 100%;
+  padding: 20px;
+  color: aliceblue;
+  font-size: 20px;
+  background-color: #7999aa;
+}
+.playlist ul li:not(:last-child) {
+  margin: 0 0 10px 0;
+}
