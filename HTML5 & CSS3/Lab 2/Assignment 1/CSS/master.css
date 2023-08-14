@@ -1,0 +1,27 @@
+body {
+  background-color: #009688;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+h1 {
+  color: white;
+}
+button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  background-color: #244643;
+  border-radius: 3px;
+}
+canvas {
+  display: block;
+  margin: 20px auto;
+  border: 5px solid white
+}

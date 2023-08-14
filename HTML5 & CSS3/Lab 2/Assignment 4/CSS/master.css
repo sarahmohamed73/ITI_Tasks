@@ -1,0 +1,63 @@
+body {
+  font-family: 'Fredericka the Great', cursive;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 40px;
+  border: 5px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .shape #heart {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  transform: rotate(180deg);
+  top: 30px;
+}
+.card .shape #heart:before,
+.card .shape #heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #333;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.card .shape #heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.card .shape #triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 50px solid #333;
+  position: relative;
+  left: 29px;
+}
+.card p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+.card p:first-child {
+  align-self: flex-start;
+}
+.card p:last-child {
+  align-self: flex-end;
+}
