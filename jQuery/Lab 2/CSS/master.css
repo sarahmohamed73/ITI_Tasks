@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 40px;
+  color: #2d2a2a;
+  text-align: center;
+}
+table {
+  width: 900px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  color: #2d2a2a;
+  padding: 0;
+}
+table thead tr {
+  height: 60px;
+}
+table tbody tr {
+  height: 80px;
+}
+table thead th {
+  color: white;
+  background-color: #2d2a2a;
+  border-bottom: 1px solid #2d2a2a;
+}
+table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #9FA6B2;
+  color: #2d2a2a; 
+  min-width: 60px;
+}
+table tbody td:first-child {
+  text-align: center;
+}
+table tbody tr:hover {
+  background-color: #e1e1e1;
+}
