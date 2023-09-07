@@ -1,0 +1,9 @@
+Lab:
+	- write a program that prints hello world
+	- application to take a number in binary form from the user, and print it as a decimal
+	- write a function that takes a number as an argument and if the number
+		divisible by 3 return "Fizz" and if it is divisible by 5 return "buzz" and if is is
+		divisible by both return "FizzBuzz"
+	- Ask the user to enter the radius of a circle print its calculated area and circumference
+	- Ask the user for his name then confirm that he has entered his name (not an empty string/integers). then proceed to ask him for his email and print all this data
+	- Write a program that prints the number of times the string 'iti' occurs in

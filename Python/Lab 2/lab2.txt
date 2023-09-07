@@ -1,0 +1,12 @@
+MAKE SURE EVERYTHING IS INSIDE A FUNCTION, in the lab only execute/comment the functions calls
+
+
+1 - Fill an array of 5 elements from the user, Sort it in descending and ascending orders then display the output.
+2 - Write a function that accepts two arguments (length, start) to generate an array of a specific length filled with integer numbers increased by one from start.
+3 - Write a program which repeatedly reads numbers until the user
+	    enters “done”. Once “done” is entered, print out the total, count, and average of the numbers.
+	    If the user enters anything other than a number, detect their
+            mistake, print an error message and skip to the next number.
+
+Bonus:
+4 - discuss why dictionary key can only be an immutable type, how the set makes sure it has non-duplicates
